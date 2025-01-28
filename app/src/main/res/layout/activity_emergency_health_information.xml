@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your name"
+            tools:ignore="HardcodedText"
+            android:inputType="text"
+            android:autofillHints=""
+            android:textColor="@android:color/black"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            tools:ignore="HardcodedText"
+            android:inputType="text"
+            android:autofillHints=""
+            android:textColor="@android:color/black"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <EditText
+            android:id="@+id/editTextSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sex"
+            tools:ignore="HardcodedText"
+            android:inputType="text"
+            android:autofillHints=""
+            android:textColor="@android:color/black"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            tools:ignore="HardcodedText"
+            android:inputType="text"
+            android:autofillHints=""
+            android:textColor="@android:color/black"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <EditText
+            android:id="@+id/editTextMedications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Medications"
+            tools:ignore="HardcodedText"
+            android:inputType="text"
+            android:autofillHints=""
+            android:textColor="@android:color/black"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <EditText
+            android:id="@+id/editTextMedicalConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Medical Conditions"
+            tools:ignore="HardcodedText"
+            android:inputType="text"
+            android:autofillHints=""
+            android:textColor="@android:color/black"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <EditText
+            android:id="@+id/editTextAllergies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Allergies"
+            tools:ignore="HardcodedText"
+            android:inputType="text"
+            android:autofillHints=""
+            android:textColor="@android:color/black"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <EditText
+            android:id="@+id/editTextPhoneNumbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Emergency Contacts"
+            tools:ignore="HardcodedText"
+            android:inputType="phone"
+            android:autofillHints=""
+            android:textColor="@android:color/black"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <EditText
+            android:id="@+id/editTextInsuranceInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insurance Information"
+            tools:ignore="HardcodedText"
+            android:inputType="text"
+            android:autofillHints=""
+            android:textColor="@android:color/black"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <Button
+            android:id="@+id/buttonSaveInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Information"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</ScrollView>

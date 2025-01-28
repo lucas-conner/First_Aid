@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:ignore="Overdraw">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="64dp"
+            android:clipToPadding="false">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@color/light_pale_pink">
+
+
+                <ImageView
+                    android:id="@+id/detail_image_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/image_desc"
+                    app:layout_constraintTop_toBottomOf="@id/prevention_text_view"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="16dp"/>
+
+                <!-- Existing content up to ImageView -->
+                <ImageView
+                    android:id="@+id/detail_image_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/detail_image_view1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/image_desc" />
+
+
+                <!-- Term Label -->
+                <TextView
+                    android:id="@+id/label_term"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Topic"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/term_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/label_term"
+                    tools:text="Term goes here"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black" />
+
+                <!-- Overview Label -->
+                <TextView
+                    android:id="@+id/label_overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Overview"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/term_text_view"
+                    android:layout_marginTop="16dp"
+                    tools:ignore="HardcodedText"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/overview_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/label_overview"
+                    tools:text="Overview goes here"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black" />
+
+                <!-- Action Label -->
+                <TextView
+                    android:id="@+id/label_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/immediate_actions_title"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/overview_text_view"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/action_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/label_action"
+                    tools:text="Immediate action details go here"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black" />
+
+                <!-- Symptoms Label -->
+                <TextView
+                    android:id="@+id/label_symptoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/symptoms_title"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/action_text_view"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/symptoms_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/label_symptoms"
+                    tools:text="Symptoms details go here"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black" />
+
+                <!-- Triggers Label -->
+                <TextView
+                    android:id="@+id/label_triggers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Triggers"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/symptoms_text_view"
+                    android:layout_marginTop="16dp"
+                    tools:ignore="HardcodedText"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/triggers_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/label_triggers"
+                    tools:text="Triggers details go here"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black" />
+
+                <!-- Treatment Label -->
+                <TextView
+                    android:id="@+id/label_treatment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Treatment"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/triggers_text_view"
+                    android:layout_marginTop="16dp"
+                    tools:ignore="HardcodedText"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/treatment_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/label_treatment"
+                    tools:text="Treatment details go here"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black" />
+
+                <!-- Prevention Label -->
+                <TextView
+                    android:id="@+id/label_prevention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prevention"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/treatment_text_view"
+                    android:layout_marginTop="16dp"
+                    tools:ignore="HardcodedText"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/prevention_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/label_prevention"
+                    tools:text="Prevention details go here"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black" />
+
+
+                <TextView
+                    android:id="@+id/disclaimer_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/disclaimer_text"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/detail_image_view2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:padding="16dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center_horizontal|bottom" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
